@@ -34,48 +34,48 @@ const services: Service[] = [
   {
     name: "Quran for Kids",
     description: "Learn the basics of Arabic alphabet and Quran reading",
-    link: "/services/noorani-qaida",
+    link: "/our-services/noorani-qaida",
   },
   {
     name: "Quran Recitation",
     description: "Learn proper Quran recitation techniques",
-    link: "/services/quran-reading-and-recitation",
+    link: "/our-services/quran-reading-and-recitation",
   },
   {
     name: "Quran Memorization",
     description: "Memorize the Quran with expert guidance",
-    link: "/services/quran-memorization",
+    link: "/our-services/quran-memorization",
   },
   // {
   //   name: "Tajweed Classes",
   //   description: "Master the rules of Tajweed",
-  //   link: "/services/tajweed",
+  //   link: "/our-services/tajweed",
   // },
   {
     name: "Islamic Studies",
     description: "Comprehensive courses on Islamic knowledge",
-    link: "/services/basic-islamic-education",
+    link: "/our-services/basic-islamic-education",
   },
   
   {
     name: "Duas and Salah",
     description: "Learn essential prayers and proper prayer methods",
-    link: "/services/duas-and-salah",
+    link: "/our-services/duas-and-salah",
   },
   {
     name: "Quranic Arabic Language",
     description: "Learn to read and understand Quranic Arabic, making your studies more insightful.",
-    link: "/services/quranic-arabic-language",
+    link: "/our-services/quranic-arabic-language",
   },
   {
     name: "Hadith Courses",
     description: "Study authentic Hadith collections and their significance in Islamic studies.",
-    link: "/services/hadith-courses",
+    link: "/our-services/hadith-courses",
   },
   {
     name: "Quran Tafsir",
     description: "Understand the Quran's message and context, enabling you to apply its teachings to your life.",
-    link: "/services/quran-tafsir",
+    link: "/our-services/quran-tafsir",
   },
 ];
 

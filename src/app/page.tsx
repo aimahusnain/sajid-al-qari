@@ -100,7 +100,7 @@ const Home = () => {
           A Spiritual Journey Through Sound
           </p>
           <Link
-            href="/services"
+            href="/our-services"
             className="inline-block bg-green-50 text-[#0000FF] font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
           >
             Experience the Divine
