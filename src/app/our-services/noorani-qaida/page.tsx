@@ -105,15 +105,18 @@ export default function NooraniQaidaPage() {
           </div>
         </section>
 
-        <div className="text-center animate-fade-in">
+        <div className="text-center animate-fade-in items-center justify-center mx-auto flex-col flex">
           <h2 className="text-3xl font-bold mb-4 text-yellow-300">Ready to Start Your Journey?</h2>
           <p className="mb-8">Join our Noorani Qaida course and take the first step towards reading the Quran.</p>
-          <Link href="/contact" className="bg-yellow-400 text-blue-800 font-bold py-3 px-6 rounded-full hover:bg-yellow-300 transition duration-300 mr-4">
+        <div className="flex sm:flex-row flex-col sm:w-fit w-full gap-6">
+          <Link href="/contact" className="sm:w-fit w-full bg-yellow-400 text-blue-800 font-bold py-3 px-6 rounded-full hover:bg-yellow-300 transition duration-300 mr-4">
             Book a Free Trial
           </Link>
           <Link href="/pricing" className="bg-transparent border-2 border-yellow-400 text-yellow-400 font-bold py-3 px-6 rounded-full hover:bg-yellow-400 hover:text-blue-800 transition duration-300">
             View Pricing
           </Link>
+          </div>
+
         </div>
       </div>
     </main>

@@ -10,6 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sajid Al-Qari - Professional Quran Reciter",
   description: "Learn Quran online with expert teachers",
+  icons: {
+    icon: ["/fav.ico"],
+    shortcut: ["/fav.ico"],
+  },
 };
 
 export default function RootLayout({
