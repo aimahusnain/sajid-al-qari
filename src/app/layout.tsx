@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <meta name='theme-color' content="#f7bf45" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         <FloatingContactButton />
