@@ -10,56 +10,56 @@ const courses = [
     description:
       "Engaging and fun Quranic education for children with kid-friendly instructors.",
     icon: "👶",
-    link: "/services/noorani-qaida"
+    link: "/our-services/noorani-qaida"
   },
   {
     title: "Quran Recitation",
     description:
       "Perfect for beginners. Learn proper pronunciation and Tajweed rules with experienced instructors.",
     icon: "🎙️",
-    link: "/services/quran-reading-and-recitation"
+    link: "/our-services/quran-reading-and-recitation"
   },
   {
     title: "Quran Memorization",
     description:
       "Our Hifz program helps you memorize the Quran with a structured curriculum and expert tutors.",
     icon: "📚",
-    link: "/services/quran-memorization"
+    link: "/our-services/quran-memorization"
   },
   {
     title: "Islamic Studies",
     description:
       "Gain comprehensive knowledge covering Hadith, Fiqh, Seerah, and more.",
     icon: "🕌",
-    link: "/services/basic-islamic-education"
+    link: "/our-services/basic-islamic-education"
   },
   {
     title: "Quranic Arabic Language",
     description:
       "Learn to read and understand Quranic Arabic, making your studies more insightful.",
     icon: "🔤",
-    link: "/services/quranic-arabic-language"
+    link: "/our-services/quranic-arabic-language"
   },
   {
     title: "Hadith Courses",
     description:
       "Study authentic Hadith collections and their significance in Islamic studies.",
     icon: "📜",
-    link: "/services/hadith-courses"
+    link: "/our-services/hadith-courses"
   },
   {
     title: "Duas & Salah",
     description:
       "Gain a basic understanding of Islamic teachings and principles in a short time.",
     icon: "⏱️",
-    link: "/services/duas-and-salah"
+    link: "/our-services/duas-and-salah"
   },
   {
     title: "Quran Tafsir",
     description:
       "Understand the Quran's message and context, enabling you to apply its teachings to your life.",
     icon: "📖",
-    link: "/services/quran-tafsir"
+    link: "/our-services/quran-tafsir"
   },
 ];
 
