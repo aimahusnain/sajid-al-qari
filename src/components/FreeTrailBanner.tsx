@@ -28,12 +28,12 @@ const FreeTrialBanner = () => {
                 from <span className="font-semibold">Sajid Al Qari.</span>{" "}
                 Enroll Now!
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col gap-4">
                 <Link href="/contact">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 md:py-4 md:text-lg md:px-10"
+                    className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full w-full text-white bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 md:py-4 md:text-lg md:px-10"
                   >
                     Book Free Trial Now
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -58,11 +58,6 @@ const FreeTrialBanner = () => {
               >
                 <BookOpen className="h-64 w-64 text-white opacity-25" />
               </motion.div>
-              <img
-                className="h-full w-full object-cover"
-                src="/api/placeholder/1000/1000"
-                alt="Quran learning"
-              />
             </div>
           </div>
         </motion.div>
