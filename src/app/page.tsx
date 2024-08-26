@@ -6,9 +6,7 @@ import EnrollmentSteps from "@/components/Steps";
 import WhyChooseSajidQuran from "@/components/Whychoose";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import {
-  FaStar
-} from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 const DynamicCalligraphy = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -74,22 +72,15 @@ const DynamicCalligraphy = () => {
   return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />;
 };
 
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b bg-white font-sans text-gray-800">
+    <div className="min-h-screen pt-20 bg-gradient-to-b bg-white font-sans text-gray-800">
       <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#aa5600] via-[#f7bf45] to-[#f7bf45] animate-gradient-xy"></div>
         <DynamicCalligraphy />
         <div className="relative z-10 text-center px-4">
-          <div className="relative bottom-24">
-          <p className="text-2xl italic leading-relaxed max-w-3xl mx-auto text-gray-700">
-            &quot;And recite the Quran with measured recitation.&quot;
-          </p>
-          <p className="text-gray-600 mt-2">Surah Al-Muzzammil - Verse 4</p>
-          </div>
-
           <h1 className="font-scheherazade text-7xl md:text-9xl mb-4 text-green-50 tracking-wide animate-float">
             ساجد القارئ
           </h1>
@@ -97,7 +88,7 @@ const Home = () => {
             Sajid Al-Qari
           </p>
           <p className="font-poppins text-xl md:text-2xl text-black mb-12 animate-float-delay-2">
-          A Spiritual Journey Through Sound
+            A Spiritual Journey Through Sound
           </p>
           <Link
             href="/our-services"
@@ -105,6 +96,12 @@ const Home = () => {
           >
             Experience the Divine
           </Link>
+          <div className="mt-24">
+            <p className="text-2xl italic leading-relaxed max-w-3xl mx-auto text-gray-700">
+              &quot;And recite the Quran with measured recitation.&quot;
+            </p>
+            <p className="text-gray-600 mt-2">Surah Al-Muzzammil - Verse 4</p>
+          </div>
         </div>
       </div>
 
@@ -156,7 +153,7 @@ const Home = () => {
 
         <section
           id="start-journey"
-          className="mb-20 text-center bg-gradient-to-br from-yellow-500 to-orange-500 py-16 rounded-xl text-white"
+          className="mb-20 text-center bg-gradient-to-br from-yellow-500 to-orange-500 py-16 rounded-xl text-white sm:px-0 px-10"
         >
           <h2 className="text-4xl font-bold mb-6">
             Ready to Embark on Your Quranic Journey?
@@ -175,6 +172,6 @@ const Home = () => {
       </main>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { BookOpen, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import React from "react";
+import { motion } from "framer-motion";
+import { BookOpen, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const FreeTrialBanner = () => {
   return (
@@ -17,27 +17,28 @@ const FreeTrialBanner = () => {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="p-10 lg:p-16 flex flex-col justify-center">
-              <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
+              <h2 className="sm:text-4xl text-3xl font-extrabold text-gray-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-blue-600">
                   EXPERIENCE COMPLIMENTARY ONLINE QURAN CLASSES
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Avail our Complimentary Trial Classes by Completing the Form to Learn Quran Online. Experience the Three-Day Free Trial Offer from <span className="font-semibold">Sajid Al Qari.</span> Enroll Now!
+                Avail our Complimentary Trial Classes by Completing the Form to
+                Learn Quran Online. Experience the Three-Day Free Trial Offer
+                from <span className="font-semibold">Sajid Al Qari.</span>{" "}
+                Enroll Now!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                href="/contact"
-                >
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 md:py-4 md:text-lg md:px-10"
+                <Link href="/contact">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 md:py-4 md:text-lg md:px-10"
                   >
-                  Book Free Trial Now
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </motion.button>
-                    </Link>
+                    Book Free Trial Now
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </motion.button>
+                </Link>
                 <motion.span
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
