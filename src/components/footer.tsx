@@ -131,6 +131,10 @@ const AnimatedFooter = () => {
             reserved.
           </p>
         </div>
+        {/* Design Credit */}
+        <div className="mt-4 text-center text-gray-300">
+          <p>Designed by <Link target="_blank" href="https://webkin-solutions.vercel.app" className="text-yellow-300 hover:underline" rel="noopener noreferrer">Webkin Solutions</Link></p>
+        </div>
       </div>
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-yellow-600 opacity-30"></div>

@@ -88,13 +88,13 @@ const Home = () => {
             </p>
             <div className="space-x-4 mb-12">
               <Link
-                href="/start-free-trial"
+                href="/contact"
                 className="inline-block bg-green-50 text-[#0000FF] font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               >
                 Start Free Trial
               </Link>
               <Link
-                href="/explore-courses"
+                href="/our-services"
                 className="inline-block bg-blue-500 text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               >
                 Explore Courses
