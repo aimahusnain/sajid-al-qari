@@ -40,7 +40,7 @@ const EnrollmentSteps = () => {
         </motion.h2>
         <div className="text-center mb-12">
           <p className="text-xl font-semibold text-gray-800">
-            Are you looking for a convenient and effective way to Learn Quran Online? Sajid al-qari is here to provide you with an exceptional online Quran learning experience. We understand the importance of accessing quality Islamic education, regardless of your location. That&apos;s why we offer comprehensive online Quran courses tailored to meet the needs of learners in the USA.
+            Are you looking for a convenient and effective way to Learn Quran Online? Sajid Quran Academy is here to provide you with an exceptional online Quran learning experience. We understand the importance of accessing quality Islamic education, regardless of your location. That&apos;s why we offer comprehensive online Quran courses tailored to meet the needs of learners in the USA.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">

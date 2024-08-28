@@ -46,7 +46,7 @@ const AnimatedFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
-              title: "Sajid Al-Qari",
+              title: "Sajid Quran Academy",
               content: (
                 <p className="text-yellow-300">
                   Embark on a spiritual journey through the beauty of Quranic
@@ -127,7 +127,7 @@ const AnimatedFooter = () => {
         </div>
         <div className="mt-12 pt-8 border-t border-yellow-500 text-center">
           <p>
-            &copy; {new Date().getFullYear()} Sajid Al-Qari. All rights
+            &copy; {new Date().getFullYear()} Sajid Quran Academy. All rights
             reserved.
           </p>
         </div>

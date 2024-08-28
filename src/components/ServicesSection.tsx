@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Image from "next/image";
 
 const courses = [
   {
@@ -10,6 +10,7 @@ const courses = [
     description:
       "Engaging and fun Quranic education for children with kid-friendly instructors.",
     icon: "👶",
+    image: "/short-islamic-courses-online.webp", // Add path to your image
     link: "/our-services/noorani-qaida"
   },
   {
@@ -17,13 +18,15 @@ const courses = [
     description:
       "Perfect for beginners. Learn proper pronunciation and Tajweed rules with experienced instructors.",
     icon: "🎙️",
-    link: "/our-services/quran-reading-and-recitation"
+    image: "/learn-quran-reading-online-for-beginners.webp", // Add path to your image
+    link: "/learn-quran-reading-online-for-beginners.webp"
   },
   {
     title: "Quran Memorization",
     description:
       "Our Hifz program helps you memorize the Quran with a structured curriculum and expert tutors.",
     icon: "📚",
+    image: "/memorize-quran-online.webp", // Add path to your image
     link: "/our-services/quran-memorization"
   },
   {
@@ -31,6 +34,7 @@ const courses = [
     description:
       "Gain comprehensive knowledge covering Hadith, Fiqh, Seerah, and more.",
     icon: "🕌",
+    image: "/Tajweed-classes-online.webp", // Add path to your image
     link: "/our-services/basic-islamic-education"
   },
   {
@@ -38,6 +42,7 @@ const courses = [
     description:
       "Learn to read and understand Quranic Arabic, making your studies more insightful.",
     icon: "🔤",
+    image: "/online-fiqh-hanafi-courses.webp", // Add path to your image
     link: "/our-services/quranic-arabic-language"
   },
   {
@@ -45,6 +50,7 @@ const courses = [
     description:
       "Study authentic Hadith collections and their significance in Islamic studies.",
     icon: "📜",
+    image: "/online-hadith-courses.webp", // Add path to your image
     link: "/our-services/hadith-courses"
   },
   {
@@ -52,6 +58,7 @@ const courses = [
     description:
       "Gain a basic understanding of Islamic teachings and principles in a short time.",
     icon: "⏱️",
+    image: "/online-alimah-course.webp", // Add path to your image
     link: "/our-services/duas-and-salah"
   },
   {
@@ -59,6 +66,7 @@ const courses = [
     description:
       "Understand the Quran's message and context, enabling you to apply its teachings to your life.",
     icon: "📖",
+    image: "/quran-translation-classes-online.webp", // Add path to your image
     link: "/our-services/quran-tafsir"
   },
 ];
@@ -93,8 +101,14 @@ const ServicesSection: React.FC = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-yellow-300"
             >
+                <Image
+                width={150}
+                height={160}
+                  src={course.image}
+                  alt={course.title}
+                  className="w-full h-40 object-cover"
+                />
               <div className="p-6">
-                <div className="text-4xl mb-4">{course.icon}</div>
                 <h3 className="text-xl font-semibold text-blue-800 mb-2">
                   {course.title}
                 </h3>

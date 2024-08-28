@@ -8,7 +8,7 @@ import FloatingContactButton from "@/components/FloatingContact";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sajid Al-Qari - Professional Quran Reciter",
+  title: "Sajid Quran Academy - Professional Quran Reciter",
   description: "Learn Quran online with expert teachers",
   icons: {
     icon: ["/favicon.ico"],

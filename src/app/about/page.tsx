@@ -17,7 +17,7 @@ const AboutUs: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold text-blue-800 mb-4">
-            Embark on a Divine Journey with Sajid Al Qari
+            Embark on a Divine Journey with Sajid Quran Academy
           </h1>
           <p className="text-xl text-yellow-700">Illuminating Hearts, One Verse at a Time</p>
         </div>
@@ -36,7 +36,7 @@ const AboutUs: React.FC = () => {
             <div className="p-8 md:w-1/2">
               <h2 className="text-3xl font-semibold text-blue-700 mb-4">Your Gateway to Quranic Wisdom</h2>
               <p className="text-yellow-800 text-lg leading-relaxed">
-                At Sajid Al Qari, we offer a transformative online learning experience, starting with the essential Noorani Qaida. This foundational course is your first step towards mastering Quran recitation and understanding the nuances of Tajweed. Our carefully crafted curriculum, comprising 25 comprehensive lessons, is designed to guide learners of all ages through the beautiful journey of Quranic studies.
+                At Sajid Quran Academy, we offer a transformative online learning experience, starting with the essential Noorani Qaida. This foundational course is your first step towards mastering Quran recitation and understanding the nuances of Tajweed. Our carefully crafted curriculum, comprising 25 comprehensive lessons, is designed to guide learners of all ages through the beautiful journey of Quranic studies.
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ const AboutUs: React.FC = () => {
         </div>
 
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-16">
-          <h2 className="text-3xl font-semibold text-blue-700 mb-6 text-center">The Sajid Al Qari Difference</h2>
+          <h2 className="text-3xl font-semibold text-blue-700 mb-6 text-center">The Sajid Quran Academy Difference</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-yellow-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-blue-800 mb-3">Personalized Learning Paths</h3>

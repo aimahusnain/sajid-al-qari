@@ -215,7 +215,7 @@ const NavBar: React.FC = () => {
               whileTap={{ scale: 0.95 }}
             >
              <Image src="/Logo.png" alt="Logo" width={50} height={50} />
-              <span className="text-2xl">Sajid Al Qari</span>
+              <span className="text-2xl">Sajid Quran Academy</span>
             </motion.a>
             <div className="hidden lg:flex items-center space-x-1">
               {menuItems.map((item) => (
@@ -289,7 +289,7 @@ const NavBar: React.FC = () => {
                 >
                               <Image src="/Logo.png" alt="Logo" width={50} height={50} />
 
-                  <span className="text-2xl">Sajid Al Qari</span>
+                  <span className="text-2xl">Sajid Quran Academy</span>
                 </motion.a>
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1 cursor-pointer">

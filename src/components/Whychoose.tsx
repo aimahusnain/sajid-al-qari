@@ -40,7 +40,7 @@ const WhyChooseSajidQuran = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Why Choose Sajid Al Qari?
+            Why Choose Sajid Quran Academy?
           </h2>
           <p className="mt-4 text-xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-blue-600">
             Our Competitive Features

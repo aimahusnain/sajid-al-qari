@@ -72,35 +72,41 @@ const DynamicCalligraphy = () => {
   return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />;
 };
 
-import React from "react";
-
 const Home = () => {
   return (
-    <div className="min-h-screen pt-20 bg-gradient-to-b bg-white font-sans text-gray-800">
+    <div className="min-h-screen pt-20 bg-gradient-to-b from-white to-gray-100 font-sans text-gray-800">
       <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#aa5600] via-[#f7bf45] to-[#f7bf45] animate-gradient-xy"></div>
         <DynamicCalligraphy />
-        <div className="relative z-10 text-center px-4">
-          <h1 className="font-scheherazade text-7xl md:text-9xl mb-4 text-green-50 tracking-wide animate-float">
-            ساجد القارئ
-          </h1>
-          <p className="font-poppins text-3xl md:text-4xl text-green-100 mb-8 animate-float-delay">
-            Sajid Al-Qari
-          </p>
-          <p className="font-poppins text-xl md:text-2xl text-black mb-12 animate-float-delay-2">
-            A Spiritual Journey Through Sound
-          </p>
-          <Link
-            href="/our-services"
-            className="inline-block bg-green-50 text-[#0000FF] font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-          >
-            Experience the Divine
-          </Link>
-          <div className="mt-24">
-            <p className="text-2xl italic leading-relaxed max-w-3xl mx-auto text-gray-700">
-              &quot;And recite the Quran with measured recitation.&quot;
+        <div className="relative z-10 text-center px-4 flex flex-col md:flex-row items-center justify-between">
+          <div className="md:w-1/2">
+            <h1 className="font-scheherazade text-4xl md:text-6xl mb-4 text-green-50 tracking-wide animate-float">
+              Learn Quran Online with Tajweed
+            </h1>
+            <p className="font-poppins text-xl md:text-2xl text-green-100 mb-8 animate-float-delay">
+              We have the best and most qualified online Quran tutors for Quran reading, Tajweed, Memorization/Hifz, and Quranic Arabic.
             </p>
-            <p className="text-gray-600 mt-2">Surah Al-Muzzammil - Verse 4</p>
+            <div className="space-x-4 mb-12">
+              <Link
+                href="/start-free-trial"
+                className="inline-block bg-green-50 text-[#0000FF] font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              >
+                Start Free Trial
+              </Link>
+              <Link
+                href="/explore-courses"
+                className="inline-block bg-blue-500 text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              >
+                Explore Courses
+              </Link>
+            </div>
+          </div>
+          <div className="md:w-1/2 mt-8 md:mt-0">
+            <img
+              src="/learn-quran-online-classes.avif"
+              alt="Quran Learning"
+              className="w-full h-auto max-w-md mx-auto"
+            />
           </div>
         </div>
       </div>

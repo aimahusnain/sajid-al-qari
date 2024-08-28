@@ -25,7 +25,7 @@ const FreeTrialBanner = () => {
               <p className="text-lg text-gray-600 mb-8">
                 Avail our Complimentary Trial Classes by Completing the Form to
                 Learn Quran Online. Experience the Three-Day Free Trial Offer
-                from <span className="font-semibold">Sajid Al Qari.</span>{" "}
+                from <span className="font-semibold">Sajid Quran Academy.</span>{" "}
                 Enroll Now!
               </p>
               <div className="flex flex-col gap-4">
