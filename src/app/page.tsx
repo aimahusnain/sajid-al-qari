@@ -78,7 +78,7 @@ const Home = () => {
       <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#aa5600] via-[#f7bf45] to-[#f7bf45] animate-gradient-xy"></div>
         <DynamicCalligraphy />
-        <div className="relative z-10 text-center px-4 flex flex-col md:flex-row items-center justify-between">
+        <div className="relative sm:py-0 py-16 z-10 text-center px-4 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2">
             <h1 className="font-scheherazade text-4xl md:text-6xl mb-4 text-green-50 tracking-wide animate-float">
               Learn Quran Online with Tajweed
@@ -86,10 +86,10 @@ const Home = () => {
             <p className="font-poppins text-xl md:text-2xl text-green-100 mb-8 animate-float-delay">
               We have the best and most qualified online Quran tutors for Quran reading, Tajweed, Memorization/Hifz, and Quranic Arabic.
             </p>
-            <div className="space-x-4 mb-12">
+            <div className="mb-12 flex sm:flex-row flex-col items-center justify-center gap-5">
               <Link
                 href="/contact"
-                className="inline-block bg-green-50 text-[#0000FF] font-semibold py-3 px-8 rounded-full text-lg hover:bg-green-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                className="inline-block bg-green-50 text-[#0000FF] font-semibold py-3 px-10 rounded-full text-lg hover:bg-green-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               >
                 Start Free Trial
               </Link>
@@ -115,10 +115,10 @@ const Home = () => {
 
       <FreeTrialBanner />
 
-      <WhyChooseSajidQuran />
+        <PopularCourses />
 
       <main className="container mx-auto px-4 py-12">
-        <PopularCourses />
+      <WhyChooseSajidQuran />
 
         <section className="my-20">
           <h2 className="text-4xl font-bold mb-8 text-center text-blue-800">
