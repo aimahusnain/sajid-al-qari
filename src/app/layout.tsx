@@ -27,11 +27,11 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#fff" />
       </head>
-      <GoogleTagManager gtmId="GTM-TN3BS5Q7" />
+      <GoogleTagManager gtmId="GTM-5DNKHPQ9" />
       <body className={inter.className}>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TN3BS5Q7"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5DNKHPQ9"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
