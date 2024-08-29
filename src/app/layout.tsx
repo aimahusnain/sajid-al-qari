@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 import FloatingContactButton from "@/components/FloatingContact";
 import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google Tag Manager */}
-        <Script
+        {/* <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -43,12 +44,12 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-5DNKHPQ9');
           `,
           }}
-        />
+        /> */}
 
         <meta name="theme-color" content="#fff" />
       </head>
       <body className={inter.className}>
-        <noscript
+        {/* <noscript
           dangerouslySetInnerHTML={{
             __html: `
             <iframe
@@ -59,10 +60,11 @@ export default function RootLayout({
             ></iframe>
           `,
           }}
-        />
+        /> */}
         <Navbar />
         <FloatingContactButton />
         {children}
+        <GoogleTagManager gtmId="GTM-5DNKHPQ9" />
         <Footer />
       </body>
     </html>
