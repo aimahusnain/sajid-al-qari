@@ -58,7 +58,7 @@ export default function Contact() {
               </p>
               <p className="flex items-center text-gray-700 text-lg">
                 <FaPhone className="mr-3 text-blue-500 text-2xl" />
-                +92332-8918029
+                +923075491427
               </p>
               <p className="flex items-center text-gray-700 text-lg">
                 <BsSkype className="mr-3 text-blue-500 text-2xl" />

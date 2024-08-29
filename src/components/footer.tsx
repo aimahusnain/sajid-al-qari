@@ -86,7 +86,7 @@ const AnimatedFooter = () => {
                     hafiz.sajidiqbal786@gmail.com
                   </p>
                   <p className="flex items-center">
-                    <FaPhone className="mr-2 text-yellow-300" /> +92332-8918029
+                    <FaPhone className="mr-2 text-yellow-300" /> +923075491427
                   </p>
                   <p className="flex items-center">
                     <BsSkype className="mr-2 text-yellow-300" /> Sajid.iqbal1992

@@ -13,7 +13,7 @@ interface Contact {
 }
 
 const Contacts: Contact[] = [
-  { id: 1, name: "WhatsApp", link: "https://wa.me/923328918029", icon: MessageCircle },
+  { id: 1, name: "WhatsApp", link: "https://wa.me/923075491427", icon: MessageCircle },
   { id: 2, name: "Skype", link: "skype:sajid.iqbal1992?chat", icon: PhoneCall },
 ];
 
