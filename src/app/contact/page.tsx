@@ -9,31 +9,51 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     message: '',
+    phone: '',
     preferredDate: '',
     preferredTime: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({ ...prevState, [name]: value }));
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-      preferredDate: '',
-      preferredTime: '',
-    });
-    alert('Thank you for your message. We will get back to you soon!');
-  };
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: formData.name,
+          email: formData.email,
+          phone: `${formData.phone}`,
+          preferredDate: `${formData.preferredDate}`,
+          preferredTime: `${formData.preferredTime}`,
+        //   message: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
+          message: `${formData.message}`,
+        }),
+      });
 
+      if (response.ok) {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '', phone: '', preferredTime: '', preferredDate: '' });
+      } else {
+        const result = await response.json();
+        alert(`Failed to send message: ${result.error}`);
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Failed to send message. Please try again later.');
+    }
+  };
   return (
     <main className="min-h-screen pt-32 bg-gradient-to-b from-blue-50 to-blue-100 py-16 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -121,7 +141,7 @@ export default function Contact() {
                 <div>
                   <label htmlFor="preferredDate" className="block text-gray-700 font-semibold mb-2 flex items-center">
                     <FaCalendar className="mr-2 text-blue-500" />
-                    Preferred Date
+                    Preferred Date (optional)
                   </label>
                   <input
                     type="date"
@@ -135,7 +155,7 @@ export default function Contact() {
                 <div>
                   <label htmlFor="preferredTime" className="block text-gray-700 font-semibold mb-2 flex items-center">
                     <FaClock className="mr-2 text-blue-500" />
-                    Preferred Time
+                    Preferred Time (optional)
                   </label>
                   <input
                     type="time"
