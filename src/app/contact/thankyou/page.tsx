@@ -22,7 +22,7 @@ export default function ThankYou() {
           <FaCheckCircle className="text-green-500 text-7xl mx-auto mb-6" />
         </motion.div>
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Thank You!</h1>
-        <p className="text-xl text-gray-600 mb-8">Your message has been sent successfully. We'll get back to you soon.</p>
+        <p className="text-xl text-gray-600 mb-8">Your message has been sent successfully. We&apos;ll get back to you soon.</p>
         <div className="flex flex-col space-y-4">
           <Link href="/" className="bg-amber-500 text-white font-bold py-3 px-6 rounded-full hover:bg-amber-600 transition duration-300 flex items-center justify-center">
             <FaHome className="mr-2" />
