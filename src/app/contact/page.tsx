@@ -4,8 +4,11 @@ import React, { useState } from 'react';
 import { FaEnvelope, FaPhone, FaQuran, FaCalendar, FaClock } from 'react-icons/fa';
 import Image from 'next/image';
 import { BsSkype } from 'react-icons/bs';
+import { useRouter } from 'next/navigation';
 
 export default function Contact() {
+  const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,6 +28,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
@@ -43,8 +47,7 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        alert('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '', phone: '', preferredTime: '', preferredDate: '' });
+        router.push('/contact/thankyou');
       } else {
         const result = await response.json();
         alert(`Failed to send message: ${result.error}`);
@@ -179,12 +182,25 @@ export default function Contact() {
                 ></textarea>
               </div>
               <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-amber-400 to-amber-500 text-white font-bold py-3 px-4 rounded-md hover:from-amber-500 hover:to-amber-600 transition duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
-              >
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full bg-gradient-to-r from-amber-400 to-amber-500 text-white font-bold py-3 px-4 rounded-md hover:from-amber-500 hover:to-amber-600 transition duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isSubmitting ? (
+              <>
+                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Sending...
+              </>
+            ) : (
+              <>
                 <FaQuran className="mr-2" />
                 Book Free Trial
-              </button>
+              </>
+            )}
+          </button>
             </form>
           </div>
         </div>
